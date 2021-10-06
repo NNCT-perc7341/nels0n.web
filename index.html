@@ -1,8 +1,127 @@
-<html>
+<!DOCTYPE html>
+<html lang="jp">
   <head>
-    <title>データ可視化アプリ</title>
+    <meta charset="utf-8">
+    <title>Nels0n - Top</title>
+    <meta name="author" content="Hoshino Kouki">
+    <meta name="description" content="The site is summarizing various programs. ">
+    <link rel="stylesheet" href="load.css">
+    <link rel="stylesheet" href="master.css">
+    <link rel="icon" type="image/x-icon" href="../image/icon.ico">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel=”alternate” hreflang=”ja” href=”http://perc7341.starfree.jp/ja/”>
+    <link rel=”alternate” hreflang=”en” href=”http://perc7341.starfree.jp/en/”>
   </head>
+
   <body>
-    <h1>データを可視化するぞ！</h1>
+<!--loader-->
+<div id="loader">
+  <div id="loader-logo">
+    <img src="../image/load.png" alt="" class="fadeUp">
+  </div>
+  <div id="loader-animation" class="fadeup">
+    <div class="trinity-rings-spinner">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </div>
+</div>
+
+
+<!--header-->
+
+    <div class="header">
+      <div class="header-logo nels0n">Nels<span>0</span>n</div>
+      <div class="header-list">
+        <ul>
+          <li>Programing</li>
+        </ul>
+      </div>
+    </div>
+
+<!--main-->
+
+    <div class="main">
+      <div class="main-title">
+        ようこそ!
+        <div class="main-subtitle">
+          New!!
+          <div class="main-contents">
+            <a href="programing/beautiful-flower" class="main-link">Watch beautiful flower</a><br>
+            <a href="programing/tic-tac-toe" class="main-link">○×ゲームで遊ぶ</a><br>
+            <a href="wakeup" class="main-link">寝ている学生を起こそう！(整備途中)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--footer-->
+
+<!--footer top-->
+    <div class="footer">
+      <div class="footer-top">
+        <div class="footer-top-left">
+          <ul>
+            <li><div class="languages" href="l"><i class="fas fa-globe"></i> JP/日本語</div></li>
+            <li><a href="http://perc7341.starfree.jp/">ホーム</a></li>
+          </ul>
+        </div>
+        <div class="footer-top-right">
+          <ul>
+            <li><div class="about" href="a">このサイトについて</div></li>
+            <li><a href="https://www.instagram.com/k.hoshin0/" target="_blank"><i class="fab fa-instagram fa-2x"></i> FOLLOW ME!</a></li>
+          </ul>
+        </div>
+      </div>
+
+<!--footer bottom-->
+      <div class="footer-bottom">
+        <div class="footer-logo nels0n">Nels<span>0</span>n</div>
+        <div class="footer-bottom-list">
+          <ul>
+            <li><a href="http://perc7341.starfree.jp/admin/">©K.Hoshino</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!--select language-->
+    <div class="modal_language">
+      <div class="modal_bg modal_close"></div>
+      <div class="modal_select_language">
+        <div class="modal_header">
+          <div class="modal_close" href="l">
+            <i class="far fa-times-circle"></i>
+          </div>
+          言語 / Languages
+        </div>
+        <div class="modal_ja">
+          JP / 日本語
+        </div>
+        <div class="modal_en">
+          EN / English
+        </div>
+      </div>
+    </div>
+
+<!--about-->
+    <div class="modal_about">
+      <div class="modal_about_bg modal_about_close"></div>
+      <div class="modal_about_main">
+        <div class="modal_about_close" href="a">
+          <i class="far fa-times-circle"></i>
+        </div>
+        このサイトは、プログラミングを学習するために、管理者の<span>Nels0n</span>が作成したものです。
+        <br>
+        気ままに<span>アップデート</span>していきます。ぜひご覧ください。
+        <br>
+        instagramの<span>フォロー</span>も、お願いします。
+      </div>
+    </div>
+
+    <!--JQuery & JS-->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
